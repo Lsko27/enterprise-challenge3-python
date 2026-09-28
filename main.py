@@ -1746,6 +1746,7 @@ def gerar_previsoes_demanda(
     grupos = dataframe.groupby(
         colunas_agrupamento,
         dropna=False,
+        sort=False,
     )
 
     for valores_grupo, grupo in grupos:
